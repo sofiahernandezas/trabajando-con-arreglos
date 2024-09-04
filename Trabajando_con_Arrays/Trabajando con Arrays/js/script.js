@@ -39,4 +39,14 @@ function showList(array) {
 document.addEventListener("DOMContentLoaded", (e) => {
   // Escribe tu solución aquí
   // Sugerencia de cómo mostrar el array => showList(strangeArray);
+    // primer intento: const result = strangeArray.filter((element) => array.typeof === 'string');  ACÁ ESTÁ MAL PLANTEADO EL TYPEOF
+ //console.log(result);
+
+ const result = strangeArray
+ .filter((element) => typeof element === 'string')
+ .sort();
+
+// Muestra el array filtrado y ordenado
+showList(result);
+
 });
